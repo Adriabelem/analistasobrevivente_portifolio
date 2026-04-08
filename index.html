@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analista Sobrevivente</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stitch-bg"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">Analista <span>Sobrevivente</span></a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#conteudo">Conteúdo</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- CARROSSEL -->
+<div class="carousel" id="carousel">
+  <div class="btn-corner tl"></div><div class="btn-corner tr"></div>
+  <div class="btn-corner bl"></div><div class="btn-corner br"></div>
+  <div class="carousel-track" id="carouselTrack">
+
+    <div class="carousel-slide slide-1">
+      <div class="slide-circle"></div>
+      <div class="slide-accent"></div>
+      <div class="slide-content">
+        <div class="slide-chip">tecnologia com identidade</div>
+        <h1 class="slide-title">Soluções tech<br>feitas com <em>cuidado</em><br>e <span class="lilas">muita</span> precisão</h1>
+        <p class="slide-sub">Sites, dashboards, automações e dados — entregues com atenção a cada detalhe. Porque tecnologia também pode ter alma.</p>
+        <div class="slide-ctas">
+          <a href="#servicos" class="btn-primary">Ver serviços</a>
+          <a href="#contato" class="btn-outline">Falar comigo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide slide-2">
+      <div class="slide-circle"></div>
+      <div class="slide-accent"></div>
+      <div class="slide-content">
+        <div class="slide-chip">dashboards & dados</div>
+        <h1 class="slide-title">Seus dados<br>transformados em<br><em>decisões reais</em></h1>
+        <p class="slide-sub">Planilha bagunçada? Sistema sem relatório? Eu organizo tudo e entrego um dashboard que você realmente vai usar no dia a dia.</p>
+        <div class="slide-ctas">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
+          <a href="#servicos" class="btn-outline">Como funciona</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-slide slide-3">
+      <div class="slide-circle"></div>
+      <div class="slide-accent"></div>
+      <div class="slide-content">
+        <div class="slide-chip">automação & sites</div>
+        <h1 class="slide-title">Menos trabalho<br><em>manual</em>, mais<br><span class="lilas">resultado</span></h1>
+        <p class="slide-sub">Automatizo tarefas repetitivas e crio sites que convertem. Você foca no seu negócio — eu cuido da tecnologia.</p>
+        <div class="slide-ctas">
+          <a href="#contato" class="btn-primary">Solicitar orçamento</a>
+          <a href="#conteudo" class="btn-outline">Ver conteúdo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-arrow prev" id="prevBtn">&#8592;</button>
+  <button class="carousel-arrow next" id="nextBtn">&#8594;</button>
+  <div class="carousel-dots" id="carouselDots">
+    <div class="dot active" data-index="0"></div>
+    <div class="dot" data-index="1"></div>
+    <div class="dot" data-index="2"></div>
+  </div>
+  <div class="carousel-progress" id="carouselProgress"></div>
+</div>
+
+<!-- SERVIÇOS -->
+<section class="services" id="servicos">
+  <div class="services-intro reveal">
+    <div class="section-tag">o que eu faço</div>
+    <h2 class="section-title">Serviços que transformam<br>dados em decisões</h2>
+    <p>Do site institucional ao dashboard estratégico — cada projeto é feito com atenção e entregue com identidade.</p>
+  </div>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01 —</div>
+      <svg class="service-icon" viewBox="0 0 36 36" fill="none"><rect x="2" y="6" width="32" height="22" rx="2" stroke="#D4537E" stroke-width="1.2"/><line x1="2" y1="13" x2="34" y2="13" stroke="#D4537E" stroke-width="1.2" stroke-dasharray="2 2"/><rect x="8" y="17" width="8" height="6" rx="1" fill="rgba(212,83,126,0.2)" stroke="#D4537E" stroke-width="0.8"/><rect x="20" y="17" width="8" height="6" rx="1" fill="rgba(212,83,126,0.2)" stroke="#D4537E" stroke-width="0.8"/><line x1="14" y1="30" x2="22" y2="30" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <div class="service-name">Sites & Landing Pages</div>
+      <div class="service-desc">Sites institucionais, páginas de captura e portfólios — bonitos, rápidos e que convertem.</div>
+      <div class="service-tags"><span class="tag">HTML/CSS</span><span class="tag">Responsivo</span><span class="tag">SEO</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02 —</div>
+      <svg class="service-icon" viewBox="0 0 36 36" fill="none"><rect x="2" y="2" width="14" height="14" rx="2" stroke="#7F77DD" stroke-width="1.2"/><rect x="20" y="2" width="14" height="14" rx="2" stroke="#7F77DD" stroke-width="1.2"/><rect x="2" y="20" width="14" height="14" rx="2" stroke="#7F77DD" stroke-width="1.2"/><rect x="20" y="20" width="14" height="14" rx="2" stroke="#D4537E" stroke-width="1.2"/><rect x="22" y="22" width="10" height="10" rx="1" fill="rgba(212,83,126,0.15)"/></svg>
+      <div class="service-name">Dashboards & BI</div>
+      <div class="service-desc">Painéis visuais que transformam planilhas e sistemas em insights que você realmente usa.</div>
+      <div class="service-tags"><span class="tag">Power BI</span><span class="tag">Looker</span><span class="tag">SQL</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03 —</div>
+      <svg class="service-icon" viewBox="0 0 36 36" fill="none"><circle cx="8" cy="8" r="4" stroke="#AFA9EC" stroke-width="1.2"/><circle cx="28" cy="8" r="4" stroke="#AFA9EC" stroke-width="1.2"/><circle cx="18" cy="28" r="4" stroke="#D4537E" stroke-width="1.2"/><path d="M12 8 L24 8" stroke="#AFA9EC" stroke-width="1" stroke-dasharray="2 2"/><path d="M10 11 L16 25" stroke="#AFA9EC" stroke-width="1" stroke-dasharray="2 2"/><path d="M26 11 L20 25" stroke="#AFA9EC" stroke-width="1" stroke-dasharray="2 2"/></svg>
+      <div class="service-name">Automações</div>
+      <div class="service-desc">Elimino tarefas repetitivas conectando seus sistemas. Menos trabalho manual, mais tempo para o que importa.</div>
+      <div class="service-tags"><span class="tag">n8n</span><span class="tag">Make</span><span class="tag">APIs</span></div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04 —</div>
+      <svg class="service-icon" viewBox="0 0 36 36" fill="none"><rect x="3" y="8" width="30" height="22" rx="2" stroke="#D4537E" stroke-width="1.2"/><line x1="3" y1="14" x2="33" y2="14" stroke="#D4537E" stroke-width="0.8" opacity="0.4"/><line x1="3" y1="20" x2="33" y2="20" stroke="#D4537E" stroke-width="0.8" opacity="0.4"/><line x1="3" y1="26" x2="33" y2="26" stroke="#D4537E" stroke-width="0.8" opacity="0.4"/><circle cx="7" cy="5" r="2" stroke="#AFA9EC" stroke-width="1"/><circle cx="18" cy="5" r="2" stroke="#AFA9EC" stroke-width="1"/><circle cx="29" cy="5" r="2" stroke="#AFA9EC" stroke-width="1"/></svg>
+      <div class="service-name">Organização de Dados</div>
+      <div class="service-desc">Pego aquela planilha bagunçada e transformo em algo limpo, estruturado e pronto para análise.</div>
+      <div class="service-tags"><span class="tag">Excel</span><span class="tag">SQL</span><span class="tag">ETL</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETOS -->
+<section class="projetos" id="projetos">
+  <div class="reveal">
+    <div class="section-tag">portfólio</div>
+    <h2 class="section-title">Projetos <em style="color:var(--rosa);font-style:italic;">entregues</em></h2>
+  </div>
+  <div class="projetos-grid reveal">
+    <div class="projeto-card">
+      <div class="projeto-img-wrap"><img src="projeto_pronto.png" alt="Dashboard TikTok Analytics" class="projeto-img"></div>
+      <div class="projeto-info">
+        <div class="projeto-tipo">Dashboard · Power BI</div>
+        <div class="projeto-nome">Análise de Crescimento TikTok</div>
+        <div class="projeto-desc">Dashboard completo analisando 492 vídeos — curtidas, horários de pico, vídeos virais e estratégia de postagem recomendada.</div>
+        <div class="projeto-techs"><span class="tag">Power BI</span><span class="tag">TikTok API</span><span class="tag">DAX</span></div>
+      </div>
+    </div>
+    <div class="projeto-card">
+      <div class="projeto-img-wrap"><img src="Captura de tela 2026-02-28 162015.png" alt="Dashboard Tributário" class="projeto-img"></div>
+      <div class="projeto-info">
+        <div class="projeto-tipo">Dashboard · Power BI</div>
+        <div class="projeto-nome">Análise de Impacto Tributário</div>
+        <div class="projeto-desc">Simulação de cenários de alíquota para importação de smartphones — comparação de carga tributária direta e efeito cascata.</div>
+        <div class="projeto-techs"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Tributário</span></div>
+      </div>
+    </div>
+    <div class="projeto-placeholder">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="3" stroke="#D4537E" stroke-width="1" stroke-dasharray="3 3"/><line x1="16" y1="10" x2="16" y2="22" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="16" x2="22" y2="16" stroke="#D4537E" stroke-width="1.5" stroke-linecap="round"/></svg>
+      em breve · novo projeto
+    </div>
+    <div class="projeto-placeholder">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="3" stroke="#7F77DD" stroke-width="1" stroke-dasharray="3 3"/><line x1="16" y1="10" x2="16" y2="22" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round"/><line x1="10" y1="16" x2="22" y2="16" stroke="#7F77DD" stroke-width="1.5" stroke-linecap="round"/></svg>
+      em breve · novo projeto
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-text reveal">
+      <div class="section-tag">quem está por trás</div>
+      <h2 class="section-title">Tecnologia feita<br>com <em>alma artesanal</em></h2>
+      <p>Sou <strong>Ádria Belém</strong>, analista de dados, desenvolvedora e — sim — sobrevivente do caos que é trabalhar com tecnologia no dia a dia.</p>
+      <p>Vim da moda, passei pelo bordado, e cheguei à tecnologia trazendo o que aprendi: <strong>atenção ao detalhe, cuidado na entrega e identidade em tudo que crio.</strong></p>
+      <p>Também falo sobre a vida real de quem trabalha com dados no <strong>YouTube e TikTok</strong> — porque tecnologia é muito mais divertida quando a gente ri junto das perrengues.</p>
+    </div>
+    <div class="reveal" style="display:flex;align-items:center;justify-content:center;">
+      <div class="sobre-card">
+        <div class="btn-deco p1"></div><div class="btn-deco p2"></div>
+        <div class="btn-deco p3"></div><div class="btn-deco p4"></div>
+        <div class="sobre-card-title">O que me define</div>
+        <ul class="sobre-list">
+          <li>Analista de dados & desenvolvedora</li>
+          <li>Especialista em SQL e visualização</li>
+          <li>Criadora de conteúdo tech</li>
+          <li>Ex-área de moda & bordadeira</li>
+          <li>Fã de rock e música eletrônica</li>
+          <li>Entregadora de projetos com identidade</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="processo" id="processo">
+  <div class="reveal">
+    <div class="section-tag">como funciona</div>
+    <h2 class="section-title">Do primeiro contato<br>à entrega final</h2>
+  </div>
+  <div class="processo-steps reveal">
+    <div class="step"><div class="step-dot"></div><div class="step-num">01</div><div class="step-name">Diagnóstico</div><div class="step-desc">Entendo sua necessidade real — não só o que você pediu, mas o que você precisa.</div></div>
+    <div class="step"><div class="step-dot"></div><div class="step-num">02</div><div class="step-name">Proposta</div><div class="step-desc">Prazo, escopo e valor claros. Sem surpresa no final do projeto.</div></div>
+    <div class="step"><div class="step-dot"></div><div class="step-num">03</div><div class="step-name">Desenvolvimento</div><div class="step-desc">Execução com atualizações constantes. Você acompanha tudo em tempo real.</div></div>
+    <div class="step"><div class="step-dot"></div><div class="step-num">04</div><div class="step-name">Entrega</div><div class="step-desc">Projeto entregue, documentado e com suporte para os primeiros dias.</div></div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section class="conteudo" id="conteudo">
+  <div class="conteudo-header reveal">
+    <div>
+      <div class="section-tag">conteúdo</div>
+      <h2 class="section-title">Me acompanhe<br>nas <em style="color:var(--rosa);font-style:italic;">redes</em></h2>
+    </div>
+    <p style="max-width:300px;font-size:.88rem;color:rgba(253,252,255,.4);font-weight:300;line-height:1.7;">Falo sobre dados, tecnologia e a vida real de quem sobrevive ao dia a dia de analista.</p>
+  </div>
+  <div class="conteudo-grid reveal">
+
+    <div class="plataforma-card">
+      <div class="plataforma-header">
+        <div class="plataforma-icon yt">
+          <svg width="18" height="13" viewBox="0 0 18 13" fill="white"><path d="M17.6 2.2C17.4 1.5 16.8.9 16.1.7 14.7.3 9 .3 9 .3S3.3.3 1.9.7C1.2.9.6 1.5.4 2.2 0 3.6 0 6.5 0 6.5s0 2.9.4 4.3c.2.7.8 1.3 1.5 1.5C3.3 12.7 9 12.7 9 12.7s5.7 0 7.1-.4c.7-.2 1.3-.8 1.5-1.5.4-1.4.4-4.3.4-4.3s0-2.9-.4-4.3zM7.2 9.3V3.7L11.9 6.5 7.2 9.3z"/></svg>
+        </div>
+        <div><div class="plataforma-name">YouTube</div><div class="plataforma-handle">@AnalistaSobrevivente</div></div>
+      </div>
+      <div class="video-thumb-wrap">
+        <iframe class="yt-iframe" src="https://www.youtube.com/embed/VOxSj7XUWGo" title="Último vídeo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <div class="video-title">Testei os limites do Claude AI construindo um projeto de BI real</div>
+        <div class="video-meta">último vídeo publicado</div>
+        <a href="https://www.youtube.com/watch?v=VOxSj7XUWGo" target="_blank" class="ver-mais-link">assistir no YouTube →</a>
+      </div>
+    </div>
+
+    <div class="plataforma-card">
+      <div class="plataforma-header">
+        <div class="plataforma-icon tt">
+          <svg width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M11.5 0C11.8 2.5 13.2 4 15.5 4.2V6.8C14.1 6.9 12.8 6.4 11.5 5.6V11.8C11.5 15.2 8.7 18 5.3 18 1.9 18 -.5 15.2.5 11.8 1.3 8.8 4.2 6.9 7.2 7.4V10C5.7 9.7 4.2 10.6 3.8 12C3.3 13.6 4.3 15.1 5.9 15.5 7.5 15.9 9 14.7 9 13.2V0H11.5Z" fill="white"/></svg>
+        </div>
+        <div><div class="plataforma-name">TikTok</div><div class="plataforma-handle">@AnalistaSobrevivente</div></div>
+      </div>
+      <div class="video-thumb-wrap tt-thumb">
+        <a class="tiktok-placeholder" href="https://www.tiktok.com/@analistasobrevivente" target="_blank">
+          <div class="tiktok-logo">TikTok</div>
+          <div class="tiktok-cta">Conteúdo sobre dados e tecnologia<br>no dia a dia do analista</div>
+          <div class="tiktok-btn">Ver perfil →</div>
+        </a>
+      </div>
+      <div class="video-info">
+        <div class="video-title">Conteúdo semanal sobre dados, BI e a vida real de analista</div>
+        <div class="video-meta">@analistasobrevivente</div>
+        <a href="https://www.tiktok.com/@analistasobrevivente/photo/7613168488479493397?is_from_webapp=1&sender_device=pc&web_id=7598326197412414983" target="_blank" class="ver-mais-link">ver no TikTok →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato">
+  <div class="contato-inner reveal">
+    <div class="section-tag">vamos conversar</div>
+    <h2 class="section-title">Tem um projeto<br>em <em>mente</em>?</h2>
+    <p class="contato-sub">Me conta o que você precisa. Seja um site, um dashboard ou aquela planilha que virou um pesadelo — estou aqui para ajudar.</p>
+    <div class="contato-links">
+      <a href="adriabloom@hotmail.com" class="contato-link">✉ E-mail</a>
+      <a href="https://www.youtube.com/@AnalistaSobrevivente" target="_blank" class="contato-link">▶ YouTube</a>
+      <a href="https://www.tiktok.com/@analistasobrevivente" target="_blank" class="contato-link">◈ TikTok</a>
+      <a href="https://www.linkedin.com/in/adriabelem/" class="contato-link">LinkedIn</a>
+       <a href="https://t.me/analistasobrevivente13" class="contato-link">Telegram</a>
+
+    </div>
+    <a href="mailto:contato@analistasobrevivente.com.br" class="btn-primary">Solicitar orçamento</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Analista <span>Sobrevivente</span></div>
+  <div class="footer-copy">© 2025 · Ádria Belém · Curitiba, PR</div>
+</footer>
+<div id="modalImagem" class="modal">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imgGrande">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
